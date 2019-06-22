@@ -7,7 +7,7 @@ public class AutomationConstants {
     //Browser settings
     public static final String BROWSER_TYPE = "";
     //Selenium grid url
-    public static final String GRID_URL = "";
+    public static final String GRID_URL = Config.gridURL; //Sensitive data stored in Config.java
     public static boolean REMOTE = true;
 
 }

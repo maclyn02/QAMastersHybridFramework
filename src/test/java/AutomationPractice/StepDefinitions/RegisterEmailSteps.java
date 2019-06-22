@@ -54,7 +54,7 @@ public class RegisterEmailSteps {
     @And("^User should see full registration form$")
     public void isAccountCreationFormDisplayed() {
         registerPage=new RegisterPage();
-        Utils.wait(10);
+        Utils.wait(15);
         registerPage.isRegistrationFormDisplayed();
     }
 

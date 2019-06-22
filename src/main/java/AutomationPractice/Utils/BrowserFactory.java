@@ -21,9 +21,14 @@ public class BrowserFactory {
 
         if(AutomationConstants.REMOTE==true){
 
-            DesiredCapabilities caps = DesiredCapabilities.chrome();
-            caps.setCapability("platform", "Windows 8");
-            caps.setCapability("version", "58.0");
+            DesiredCapabilities caps = new DesiredCapabilities();
+            caps.setCapability("browserName", "chrome");
+            caps.setCapability("version", "70.0");
+            caps.setCapability("platform", "win10");
+
+//            DesiredCapabilities caps = DesiredCapabilities.chrome();
+//            caps.setCapability("platform", "Windows 8");
+//            caps.setCapability("version", "58.0");
 
 //            DesiredCapabilities caps = DesiredCapabilities.edge();
 //            caps.setCapability("platform", "Windows 10");
